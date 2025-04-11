@@ -5,7 +5,7 @@ import flyingObjects.Aircraft;
 
 import java.util.*;
 
-public class ListBasedMinimalAirport  {
+public class ListBasedMinimalAirport implements  MinimalAirport  {
 
 	/*COMPLETE - Ha d'implementar interface MinimalAirport*/
 
@@ -16,6 +16,76 @@ public class ListBasedMinimalAirport  {
 	public ListBasedMinimalAirport ()  {
 		airportId = "BCN";
 		/*COMPLETE*/
+	}
+
+	@Override
+	public String getAirportId() {
+		return "";
+	}
+
+	@Override
+	public int getCapacity() {
+		return 0;
+	}
+
+	@Override
+	public int size() {
+		return 0;
+	}
+
+	@Override
+	public boolean isFull() {
+		return false;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return false;
+	}
+
+	@Override
+	public int getNumFlights() {
+		return 0;
+	}
+
+	@Override
+	public void land(Aircraft a) {
+
+	}
+
+	@Override
+	public void takeOff(Aircraft a) {
+
+	}
+
+	@Override
+	public void addFlight(Flight f) {
+
+	}
+
+	@Override
+	public void takeOff(Flight f) {
+
+	}
+
+	@Override
+	public void land(Flight f) {
+
+	}
+
+	@Override
+	public Flight[] byFlightDepartureTime() {
+		return new Flight[0];
+	}
+
+	@Override
+	public Aircraft[] byAircraftName() {
+		return new Aircraft[0];
+	}
+
+	@Override
+	public Aircraft[] allAircrafts() {
+		return new Aircraft[0];
 	}
 
 	/* COMPLETE */

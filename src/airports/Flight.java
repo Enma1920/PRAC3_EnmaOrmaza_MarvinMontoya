@@ -37,7 +37,7 @@ public class Flight implements ScheduledTravel{
         if(aircraft == null) throw new IllegalArgumentException("The Aircraft is NULL");
         if(departure == null || arrival == null) throw new FlightScheduleException("Departure is NULL or arrival is NULL");
         if(origin == null || destination == null) throw new FlightScheduleException("Origin or destination are NULL (or both)");
-        if(arrival >= departure) throw new FlightScheduleException("Departure date is greater or equal to arrival date");
+        if(departure.getTime() >= arrival.getTime()) throw new FlightScheduleException("Departure date is greater or equal to arrival date");
     }
 
     /*COMPLETE*/
@@ -50,7 +50,8 @@ public class Flight implements ScheduledTravel{
     @Override
     public boolean equals(Object o){
         /*COMPLETE*/
-        return false; //Change as appropriate
+        //Change as appropriate
+        return o.equals(id);
     }
 
 
