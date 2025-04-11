@@ -33,11 +33,15 @@ public class Flight implements ScheduledTravel{
      */
     public Flight(String id, Aircraft aircraft, String origin, String destination, Date departure, Date arrival){
         /*COMPLETE*/
+
         if(id == null) throw new IllegalArgumentException("The id is NULL");
         if(aircraft == null) throw new IllegalArgumentException("The Aircraft is NULL");
         if(departure == null || arrival == null) throw new FlightScheduleException("Departure is NULL or arrival is NULL");
         if(origin == null || destination == null) throw new FlightScheduleException("Origin or destination are NULL (or both)");
         if(departure.getTime() >= arrival.getTime()) throw new FlightScheduleException("Departure date is greater or equal to arrival date");
+
+
+
     }
 
     /*COMPLETE*/
